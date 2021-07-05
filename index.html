@@ -1,143 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- Charset -->
-  <meta charset="UTF-8">
-  <!-- Viewport Meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, minimum-scale=1">
-  <title>Creative full page tab slider</title>
-  <!-- Default common css -->
-  <link rel="stylesheet" href="css/default.css">
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Include fonts(google font) -->
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&family=Red+Hat+Text:wght@500;700&display=swap" rel="stylesheet">
+	<title>CodeGeeks India</title>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="description" content="About Codegeeks Company, it's an official website for codegeeks company.">
+	<meta name="keywords" content="CodeGeeks, Software Building, Software Company">
+	<meta name="author" content="Harikrushna V Adiecha">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!-- <link class="icon" rel="icon" type="image/png" :href="picture"> -->
 </head>
-<body id="body" class="bg1">
-  <!-- Background SVG(/animation) -->
-  <svg class="bg-blob" viewBox="0 0 85 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path id="svg_path" class="blob-path" fill-rule="evenodd" clip-rule="evenodd" d="M32.4059 26.2721C44.6339 9.20485 18.7713 -4.80642 0 2.9239V88.3685C5.38695 97.509 11.5034 91.0179 13.4674 86.3814C33.3711 114.531 40.4022 94.3297 47.5567 84.3943C68.4108 106.317 69.4412 72.6374 58.9198 61.0461C118.885 91.3399 60.4852 -12.9197 32.4059 26.2721Z" fill="rgba(0, 0, 0, .5)"/>
-  </svg>
-  <!-- Tab -->
-  <!-- List items -->
-  <ul class="list">
-    <li><a dd-tab="tab1" class="active" href="javascript:void(0);">Home</a></li>
-    <li><a dd-tab="tab2" href="javascript:void(0);">About</a></li>
-    <li><a dd-tab="tab3" href="javascript:void(0);">Contact</a></li>
-  </ul>
-  <!-- Tab content -->
-  <div class="container">
-    <div class="tabs">
-      <!-- Tab 1 -->
-      <div class="tab active" id="tab1">
-        <div class="text-center">
-          <h1 class="company-name">CodeGeeks</h1>
-          <h3 class="company-tagline">Technology simplies your life.</h3>
-        </div>
-      </div>
-      <!-- Tab 2 -->
-      <div class="tab" id="tab2">
-        <div class="text-center">
-          <h4 class="title">Who we are!</h4>
-        </div>
-        <br />
-        <div class="container">
-          
-        <p>
-          We are passionate technocrats exploring digital world in order to solve challanging real life problems using computer science, algorithms and other latest and tranding technologies.
-        </p>
-        </div>
-      </div>
-      <!-- Tab 3 -->
-      <div class="tab" id="tab3">
-        <div class="text-center">
-          <p><strong>Mob:</strong> <a href="tel:+919033319723">+91-903-331-9723</a></p>
-          <p><strong>Email:</strong> <a href="mailto:adiechahari@gmail.com">adiechahari@gmail.com</a></p>
-          <p><strong>Address:</strong> 306 Radheshyam-1, 150 ft ringroad, Rajkot, Gujarat, India</p>
-        </div>
+<body class="bg-green-200">
+  <div class="h-screen flex flex-wrap content-center">
+    <div class="w-4/5 md: text-center mx-auto">
+      <h1 class="text-5xl mb-5 leading-normal" style="font-family: 'Poppins';">We are busy working for our clients, our work speaks for us, you can email/call us if there is any concerns.</h1>
+      <div class="bg-gray-700 inline-block px-5 rounded m-2">
+        <div class="text-gray-200 block m-2"><i class="mr-1 fas fa-envelope"></i>: <a href="mailto:adiechahari@gmail.com">adiechahari@gmail.com</a></div>
+        <div class="text-gray-200 block m-2"><i class="mr-1 fas fa-phone-alt"></i>: <a href="tel:+919033319723">+91-903-331-9723</a></div>
       </div>
     </div>
   </div>
-
-  <!-- Include Anime js for SVG animation -->
-  <!-- CDN -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script> -->
-  <!-- Anime js file -->
-  <script src="js/anime.min.js"></script>
-  <script>
-    // Body Background class list(change dynamically on click)
-    const bg = ['bg1', 'bg2', 'bg3', 'bg4'];
-    // SVG path array list
-    // It is required to have the same number of attributes/values of every SVG path.
-    const paths = [
-      'M32.4059 26.2721C44.6339 9.20485 18.7713 -4.80642 0 2.9239V88.3685C5.38695 97.509 11.5034 91.0179 13.4674 86.3814C33.3711 114.531 40.4022 94.3297 47.5567 84.3943C68.4108 106.317 69.4412 72.6374 58.9198 61.0461C118.885 91.3399 60.4852 -12.9197 32.4059 26.2721Z',
-      'M38.7343 28.916C53.3502 12.8808 14.7319 -19.9663 0 16.6749V87.2576C6.43894 95.8455 16.0974 97.0056 16.0974 85.3907C28.4478 112.978 56.8438 95.1265 56.8438 83.5237C87.3753 97.9451 98.0432 53.3173 63.4995 53.3173C103.817 44.577 72.297 -7.90594 38.7343 28.916Z',
-      'M33.0166 24.1626C63.5462 17.9935 23.7262 5.48372 0 0V88.425C5.48847 97.8844 11.7202 91.1668 13.7212 86.3686C30.8726 112.69 41.1635 94.5942 48.4529 84.3122C84.8997 104.362 70.7498 72.1452 60.0301 60.1495C117.916 55.5227 60.7448 33.9305 33.0166 24.1626Z',
-      'M32.1191 29.3137C44.2388 13.0652 53.899 -19.5838 0 16.9098V88.4311C5.33927 97.1331 32.1191 107.078 13.3482 86.5393C75.0441 116.638 52.6548 89.6794 52.6548 77.9223C108.213 77.9223 81.299 54.0394 52.6548 54.0394C80.0194 16.9098 59.9498 -7.99797 32.1191 29.3137Z'];
-    // Get list item(ul)
-    const list = document.querySelector('.list');
-    // Position / Reposition list items
-    function positionList() {
-      let active_item = document.querySelector('.list .active');
-      let list_width = list.clientWidth;
-      let active_item_width = active_item.offsetWidth;
-      // Transform list(x direction)
-      let tx = ((list_width / 2) - active_item.offsetLeft - (active_item_width / 2));
-      list.style.transform = 'translateX('+ (tx)+'px)';
-    }
-    // event: List item click
-    let list_item = document.querySelectorAll('.list li a');
-    list_item.forEach((item, key) => {
-      item.addEventListener('click', function(){
-        // Activate list item
-        activeListItem(item, key);
-        // Toggle tab content
-        toggleTabs(item, key);
-      });
-    });
-    // Activate list item
-    function activeListItem(e, key) {
-      body.className = bg[key];
-      // Call anime lib function timline to animate the SVG
-      let timeline = anime({
-        duration: 1000,
-        targets: '.bg-blob .blob-path',
-        d: [{
-          value: paths[key]
-        }],
-        easing: 'easeOutQuad',
-      });
-      
-      list_item.forEach(item => {
-        item.classList.remove('active');
-      });
-      e.classList.add('active');
-      // Reposition list
-      positionList();
-    }
-    // Activate tab(content)
-    function toggleTabs(item, key) {
-      let tab = item.attributes['dd-tab'].value;
-      let tabs = document.querySelectorAll('.tabs .tab');
-      tabs.forEach(tab => {
-        tab.classList.remove('active');
-      });
-      let active_tab = document.getElementById(tab);
-      active_tab.classList.add('active', 'animate');
-      setTimeout(() => {
-        active_tab.classList.remove('animate');
-      }, 250);
-    }
-    // Initialize
-    function init() {
-      positionList();
-    }
-    // call the function on window resize
-    window.onresize = positionList;
-    // call the function on load
-    window.onload = init;
-  </script>
 </body>
 </html>
