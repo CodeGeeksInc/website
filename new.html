@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGeeks 👋🏼</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: "Montserrat Alternates";
+        }
+        .service-card {
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05); /* Increase the size on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white text-gray-600">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center m-4">
+                <img src="https://avatars.githubusercontent.com/u/8231289?s=400&u=72918b94aa68f32fe4ee042d9a9352b6ff8fe6af&v=4" alt="Logo" class="h-12 w-12 ">
+                <h1 class="text-2xl font-bold ml-4">CodeGeeks</h1>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a class="p-4 rounded-2xl hover:bg-green-500 hover:text-white" href="#services">Services</a></li>
+                <li><a class="p-4 rounded-2xl hover:bg-green-500 hover:text-white" href="#portfolio">Portfolio</a></li>
+                <li><a class="p-4 rounded-2xl hover:bg-green-500 hover:text-white" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-cover bg-center bg-blue-500 py-20 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Welcome to CodeGeeks</h2>
+            <p class="text-xl">Your partner in software development and innovation</p>
+            <a href="#contact" class="border hover:shadow-md bg-white text-green-500 hover:bg-green-500 hover:text-white py-2 px-4 mt-4 rounded-full inline-block font-semibold">Connect with US</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold">Web Development</h3>
+                    <p class="mt-4">Designing and building websites and web applications, including front-end and back-end development. Services may cover content management systems (CMS), e-commerce platforms, and more.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold">Mobile App Development</h3>
+                    <p class="mt-4">Building mobile applications for various platforms, such as iOS and Android. This can involve native app development or cross-platform development using technologies like React Native or Flutter.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold">Software Consulting and Architecture</h3>
+                    <p class="mt-4">Providing expert advice on software architecture, technology stack selection, and overall project planning to ensure the success of software projects.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold">Blockchain Development</h3>
+                    <p class="mt-4">Developing blockchain-based solutions for secure and transparent transactions, smart contracts, and other blockchain applications.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold">Minimum Viable Product (MVP) Development</h3>
+                    <p class="mt-4">Creating a minimal version of the product with essential features to test the market and gather user feedback quickly. This approach helps startups validate their ideas with minimal investment.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold">Prototyping and Design</h3>
+                    <p class="mt-4">Assisting with the creation of wireframes, prototypes, and user interface (UI) and user experience (UX) design to define the product's look and feel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Industries Section (Horizontal Layout) -->
+<section id="industries" class="py-16 bg-green-500">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10 text-white">Industries We Served</h2>
+        <div class="flex justify-center items-center space-x-6">
+            <!-- eCommerce -->
+            <div class="industry-badge bg-white rounded-full p-4">
+                <h3 class="text-xl font-semibold">eCommerce</h3>
+            </div>
+
+            <!-- eLearning -->
+            <div class="industry-badge bg-white rounded-full p-4">
+                <h3 class="text-xl font-semibold">eLearning</h3>
+            </div>
+
+            <!-- FinTech -->
+            <div class="industry-badge bg-white rounded-full p-4">
+                <h3 class="text-xl font-semibold">FinTech</h3>
+            </div>
+
+            <!-- Real Estate -->
+            <div class="industry-badge bg-white rounded-full p-4">
+                <h3 class="text-xl font-semibold">Real Estate</h3>
+            </div>
+
+            <!-- Marketing -->
+            <div class="industry-badge bg-white rounded-full p-4">
+                <h3 class="text-xl font-semibold">Marketing</h3>
+            </div>
+
+            <!-- Add more industries as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section with Tailwind CSS Slider and Hover Description -->
+<section id="portfolio" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">Our Portfolio</h2>
+        <div class="slider relative">
+            <div class="flex gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="w-1/3 relative overflow-hidden group">
+                    <img src="https://source.unsplash.com/random/400x300" alt="Project 1" class="w-full object-cover h-64 transition-transform transform group-hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-white text-center transform group-hover:translate-y-0">
+                        <h3 class="text-xl font-semibold">Project 1</h3>
+                        <p class="hidden group-hover:block">Description for Project 1.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="w-1/3 relative overflow-hidden group">
+                    <img src="https://source.unsplash.com/random/400x300" alt="Project 2" class="w-full object-cover h-64 transition-transform transform group-hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-white text-center transform group-hover:translate-y-0">
+                        <h3 class="text-xl font-semibold">Project 2</h3>
+                        <p class="hidden group-hover:block">Description for Project 2.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="w-1/3 relative overflow-hidden group">
+                    <img src="https://source.unsplash.com/random/400x300" alt="Project 3" class="w-full object-cover h-64 transition-transform transform group-hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-white text-center transform group-hover:translate-y-0">
+                        <h3 class="text-xl font-semibold">Project 3</h3>
+                        <p class="hidden group-hover:visible">Description for Project 3.</p>
+                    </div>
+                </div>
+                <!-- Add more portfolio items with images as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-500 text-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
+            <form class="w-full max-w-lg mx-auto">
+                <input class="w-full p-2 border border-gray-300 mb-4 rounded" type="text" placeholder="Your Name" required>
+                <input class="w-full p-2 border border-gray-300 mb-4 rounded" type="email" placeholder="Your Email" required>
+                <textarea class="w-full p-2 border border-gray-300 mb-4 rounded" placeholder="Your Message" required></textarea>
+                <button class="border hover:shadow-md bg-white text-green-500 hover:bg-green-500 hover:text-white py-2 px-4 rounded-full inline-block font-semibold" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+
+<!-- Footer Section with Social Links -->
+<footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Social Media Icons and Links -->
+        <div class="flex space-x-4">
+            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook text-xl"></i>
+            </a>
+            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/youraccount" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram text-xl"></i>
+            </a>
+        </div>
+        <!-- Copyright and Contact Information -->
+        <div>
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <p>Email: info@yourcompany.com</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
