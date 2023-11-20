@@ -19,11 +19,11 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+  <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> -->
+  <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+  <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -54,7 +54,6 @@
 
       <div class="header-social-links d-flex align-items-center">
         <a href="https://www.linkedin.com/company/codegeeks/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-        <a href="https://www.instagram.com/company/codegeeks/" class="instagram"><i class="bi bi-instagram"></i></i></a>
         <a href="https://twitter.com/CodeGeeksIn/" class="twitter"><i class="bi bi-twitter"></i></i></a>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRttgHMPmWCCzBrQdSgbSDMzxpmdqGztTJBhmnDMMHnlccTtPMWgRPNxPNMHqqxQxVCnZRQ" class="gmail"><i class="bi bi-envelope-at"></i></a>
       </div>
@@ -107,7 +106,7 @@
               <div class="col-md-6">
                 <i class="bi bi-lightbulb"></i>
                 <h4>What Sets Us Apart</h4>
-                <p>In a rapidly evolving industry, [Your Company Name] stands out for its commitment to staying ahead of
+                <p>In a rapidly evolving industry, CodeGeeks stands out for its commitment to staying ahead of
                   the curve. Our team of highly skilled professionals is dedicated to staying abreast of the latest
                   technological trends, ensuring that our clients benefit from state-of-the-art solutions that position
                   them as industry leaders.</p>
@@ -118,8 +117,7 @@
                 <p>At CodeGeeks, our mission is clear - to harness the power of technology to solve complex business
                   challenges. We are committed to providing innovative and tailor-made IT solutions that not only meet
                   but exceed our clients' expectations. Through strategic thinking, collaborative teamwork, and a
-                  customer-centric approach, we aim to be the go-to partner for businesses seeking transformation in the
-                  digital era.</p>
+                  customer-centric approach.</p>
               </div>
             </div>
           </div>
@@ -130,17 +128,24 @@
 
 
 
+
+
+
+
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container">
 
+        <div id="counters" class="purecounter">
         <div class="row">
 
           <div class="col-lg-3 col-6">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <div class="counter">
+                <span class="counter">16</span>
+              </div>
+  
               <p>Happy Clients</p>
             </div>
           </div>
@@ -148,8 +153,7 @@
           <div class="col-lg-3 col-6">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="78" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span class="counter">42</span>
               <p>Projects</p>
             </div>
           </div>
@@ -157,21 +161,20 @@
           <div class="col-lg-3 col-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Hours Of Support</p>
+              <span class="counter">452</span>
+              <p>Hours Of Development</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <i class="bi bi-globe-americas"></i>
+
+              <span class="counter">4</span>
               <p>Countries</p>
             </div>
           </div>
-
+        </div>
         </div>
 
       </div>
@@ -183,9 +186,9 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>We are a team of experienced and passionate developers who specialize in creating innovative and
+          <!-- <p>We are a team of experienced and passionate developers who specialize in creating innovative and
             user-friendly web, mobile, and software solutions. From simple websites to complex blockchain applications,
-            we have the skills and expertise to bring your vision to life.</p>
+            we have the skills and expertise to bring your vision to life.</p> -->
         </div>
 
         <div class="row">
@@ -252,9 +255,9 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>We are a team of experienced and passionate developers who specialize in creating innovative and
+          <!-- <p>We are a team of experienced and passionate developers who specialize in creating innovative and
             user-friendly web and mobile applications. From simple websites to complex e-commerce platforms, we have the
-            skills and expertise to bring your vision to life.</p>
+            skills and expertise to bring your vision to life.</p> -->
         </div>
 
         <div class="row">
@@ -298,8 +301,8 @@
                 <div class="portfolio-description">
                   <h4>Online Examination</h4>
                   This project is to create a state-of-the-art MCQ exam platform using cutting-edge technologies like
-                  Node.js, Express.js, PostgreSQL, and Angular.js. We're starting with a minimum viable product, but
-                  we're committed to continuous improvement to meet the needs of our users.
+                  Node.js, Express.js, PostgreSQL, and Angular.js.<!-- We're starting with a minimum viable product, but
+                  we're committed to continuous improvement to meet the needs of our users. -->
                 </div>
               </div>
             </div>
@@ -333,9 +336,9 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#portfolio">Ne14glf</a></h4>
+                <h4><a href="#portfolio">Anyone For Golf</a></h4>
                 <div class="portfolio-description">
-                  <h4>Ne14glf</h4>
+                  <h4>Anyone For Golf</h4>
                   A PHP, CodeIgniter, MySQL social networking application for golf players and enthusiasts, with a
                   seamless PayPal payment integration, empowering users to connect with each other, share their passion
                   for golf, and book tee times and golf lessons with ease.
@@ -376,7 +379,7 @@
                   <h4>InGenius Youth</h4>
                   A PHP CodeIgniter-MySQL powered freelancing platform for sharing information, featuring a community
                   forum for posting and debating on topics, a blog and media section for sharing events and updates, and
-                  like and comment functionality for all content.
+                  like and comment functionality for African region.
                 </div>
               </div>
             </div>
@@ -466,7 +469,11 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+  <!-- Counter trial  -->
 
+
+  
+  
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
@@ -509,7 +516,6 @@
               <div class="social-links text-center text-md-right pt-3 pt-md-0">
                 <a href="https://twitter.com/CodeGeeksIn/" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRttgHMPmWCCzBrQdSgbSDMzxpmdqGztTJBhmnDMMHnlccTtPMWgRPNxPNMHqqxQxVCnZRQ" class="gmail"><i class="bi bi-envelope-at"></i></a>
-                <a href="https://www.instagram.com/company/codegeeks/" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="https://www.linkedin.com/company/codegeeks/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
@@ -526,17 +532,67 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script> -->
+    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
+    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+    <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>  -->
+    <!-- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> -->
+    <script src="assets/vendor  /php-email-form/validate.js"></script> 
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script> 
 
+
+  <!-- CDN -->
+
+  <!-- jquery (counter) -->
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="assets/jquery/jquery.counterup.min.js"></script>
+
+  <script>
+      jQuery(document).ready(function($) {
+          $('.counter').counterUp({
+              delay: 10,
+              time: 1000
+          });
+      });
+
+  </script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- BootStrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!-- Glightbox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.1.0/js/glightbox.min.js" integrity="sha512-DmZ8zx6VrSj+Nvwjg2ONA2LlRCsFyTZh9/rZH75alu+KoSTdjjVSX6z2a9kKiUlwSf6JIxzFjpw2YCyrGWk4nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.1.0/css/glightbox.min.css" integrity="sha512-hqfPkFX2vOFJG+MdyKw3ixa66C3rxE2iKwKynl+DXQJc6xj5I421OgpYZvoA9WIRHD0HeDd46IkO+gRfv2KUCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Isotope  -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Swipper -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js" integrity="sha512-/LKHQ9K9yatyOfEKXiysc9SPCpF6xkvfHQxtPkhdKS83GvfyIWDwKaOr3/LqVxbEX89Bqz+SbMHEPWm0AeRWnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.css" integrity="sha512-1CRCT9P70z3SktzqL7P8o8YvlmT1nXwFeXLBuVBa4mzQJ4fsvpmsObWooerRi4WzQT8QFrBVz/36mt/XGPYVzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Pure counter -->
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+<!-- noframework.waypoints.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- boxicons.min.css-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/transformations.min.css" integrity="sha512-3eAliSizXMyTrrFHE6iSd+0drQt0aiNGVQNomFeXKtLHzPXWeSVAqzJbo/gNGkcPSYBQrghAACUNR7Pn2j0Fcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js" integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
