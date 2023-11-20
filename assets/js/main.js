@@ -171,57 +171,25 @@
       }
     })
   }
-// Counters
-// const happyClientsCounter = new purecounter(document.getElementById('happy-clients-counter'), 17);
-// const projectsCounter = new purecounter(document.getElementById('projects-counter'), 43);
-// const hoursOfDevelopmentCounter = new purecounter(document.getElementById('hours-of-development-counter'), 453);
-// const countriesCounter = new purecounter(document.getElementById('countries-counter'), 5);
-
-// const countBoxes = document.querySelectorAll('.count-box');
-
-// for (const countBox of countBoxes) {
-//   const counter = countBox.querySelector('.purecounter');
-//   const count = parseInt(counter.getAttribute('data-purecounter-end'));
-
-//   new purecounter(counter, count);
-// }
 
 
-// const counter = document.querySelector('.counter');
-// const count = counter.querySelector('.count');
+// Counter logic
 
+let valueDisplay = document.querySelectorAll(".counter");
+let interval = 3000;
 
-// let countValue = 0;
-// let totalcounts = 5;
-
-// setInterval(() => {
-//   countValue++;
-//   count.textContent = totalcounts;
-//   document.getElementById(count).innerHTML = print('');
-//   ;
-// }, 100);
-
-
-// const counters = document.querySelectorAll('.counter');
-// const intervals = [1000, 3000, 400, 500];
-
-// for (let i = 0; i < counters.length; i++) {
-//   const counter = counters[i];
-//   const currentValue = parseInt(counter.textContent);
-//   const interval = intervals[i];
-// console.log(interval);
-//   setInterval(() => {
-//     counter.textContent = `${currentValue + 1}+`;
-//   }, interval);
-// }
-
-
-
-
-
-
-
-
+valueDisplay.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function(){
+    startValue+= 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue){
+      clearInterval(counter);
+    }
+  }, duration);
+});
 
 
 

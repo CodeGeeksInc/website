@@ -16,12 +16,15 @@ body {
 
 a {
   color: #3498db;
-  text-decoration: none;
+  text-decoration: none !important;
+  
 }
-
+/* #get_button{
+  text-decoration: none;
+} */
 a:hover {
   color: #5faee3;
-  text-decoration: none;
+
 }
 
 h1,
@@ -32,23 +35,6 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-/*--------------------------------------------------------------
-Counter trial
---------------------------------------------------------------*/
-#counters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.counter {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 10px;
-}
-
-
-/* Counter trial  2 */
 
 
 
@@ -653,7 +639,7 @@ section {
   top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 20px;
+  font-size: 30px;
   background: #3498db;
   padding: 12px;
   color: #fff;
@@ -661,8 +647,8 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
 }
 
 .counts .count-box span {
