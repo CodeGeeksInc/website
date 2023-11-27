@@ -1,11 +1,27 @@
-/**
-* Template Name: Lumia
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
+
+function sendMail() {
+  // Get the values from the form elements
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+
+  // Construct the email message
+  var emailBody = `${message}\n\nBest Regards\n${name}\n[Email: ${email}]`;
+
+  // Compose the mailto URL
+  var mailtoURL = "mailto:hello@codegeeks.in?subject=" + subject + "&body=" + encodeURIComponent(emailBody);
+
+  // console.log(mailtoURL);
+
+  // Redirect to the mailto URL
+  window.location.href = mailtoURL;
+  // document.getElementById('EmailButton').onclick(sendMail());
+}
+
+
+(function () {
   "use strict";
 
   /**
@@ -110,7 +126,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -119,7 +135,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -129,7 +145,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -163,7 +179,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -173,23 +189,23 @@
   }
 
 
-// Counter logic
+  // Counter logic
 
-let valueDisplay = document.querySelectorAll(".counter");
-let interval = 3000;
+  let valueDisplay = document.querySelectorAll(".counter");
+  let interval = 3000;
 
-valueDisplay.forEach((valueDisplay) => {
-  let startValue = 0;
-  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function(){
-    startValue+= 1;
-    valueDisplay.textContent = startValue;
-    if (startValue == endValue){
-      clearInterval(counter);
-    }
-  }, duration);
-});
+  valueDisplay.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if (startValue == endValue) {
+        clearInterval(counter);
+      }
+    }, duration);
+  });
 
 
 
@@ -208,9 +224,9 @@ valueDisplay.forEach((valueDisplay) => {
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -275,10 +291,24 @@ valueDisplay.forEach((valueDisplay) => {
       }
     }
   });
+  // Contact Form Submission 
+
+  // function sendMail(){
+  //   var body = document.getElementById("name").value;
+  //   var SubjectLine = document.getElementById("email").value;
+  //   var SubjectLine = document.getElementById("subject").value;
+  //   var SubjectLine = document.getElementById("message").value;
+  //   window.location.href = "mailto:hardikchahtbar2006@gmail.com?subject="+SubjectLine+"&body="+body;
+  //   document.getElementById('EmailButton').onclick(sendMail());
+  // } 
+
+
 
   /**
    * Initiate Pure Counter 
    */
   new PureCounter();
+
+
 
 })()
