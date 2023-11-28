@@ -239,12 +239,6 @@ function sendMail() {
 
   });
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
 
   /**
    * Portfolio details slider
@@ -262,53 +256,6 @@ function sendMail() {
       clickable: true
     }
   });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
-  // Contact Form Submission 
-
-  // function sendMail(){
-  //   var body = document.getElementById("name").value;
-  //   var SubjectLine = document.getElementById("email").value;
-  //   var SubjectLine = document.getElementById("subject").value;
-  //   var SubjectLine = document.getElementById("message").value;
-  //   window.location.href = "mailto:hardikchahtbar2006@gmail.com?subject="+SubjectLine+"&body="+body;
-  //   document.getElementById('EmailButton').onclick(sendMail());
-  // } 
-
-
-
-  /**
-   * Initiate Pure Counter 
-   */
   new PureCounter();
-
-
 
 })()
